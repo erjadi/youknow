@@ -15,6 +15,7 @@ WORKDIR /app/SpeechToWords
 COPY --from=build-env /app/SpeechToWords/bin/Release/net5.0/linux-x64/publish/* ./
 WORKDIR /app
 COPY ./src/scripts/* /app/
+RUN chmod a+x /app/*.sh
 RUN mkdir /app/util
 COPY ./src/util/youtube-dl /app/util
 CMD ["./youknow.sh"] 
