@@ -20,15 +20,15 @@ To run this image you need to provide it with three environment variables:
 - **speechregion** - This is the region that your Azure Cognitive Service is deployed in. In the above example is it **westus**
 - **speechkey** - This is one of the api keys that were provided when you created the service. You can use either key.
 
-After processing has been finished your video will be saved in /output inside the container.
+After processing has been finished your video will be saved in the /output path inside the container.
 To save the video to your local filesystem, you probably want to map this as a volume to a local directory (for example /home/eric).
 We use the --volume command line parameter for this.
 
-Putting everything together, the command line looks like this
+Putting everything together, the command line would look like this
 ```
 docker run -e youtubecode=RnjxuAprpmU -e speechregion=westus -e speechkey=0123456789abcdef --volume=/home/eric:/output erjadi/youknow
 ```
-Your output video named **youknow.mp4** should be written to your mounted volume.
+Once it's finished your output video named **youknow.mp4** should be written to your mounted volume.
 
 # How to build
 To build the docker image, simply navigate to the directory with the Dockerfile and run:
