@@ -39,7 +39,7 @@ There are two .NET 5 projects that will be built using the official Microsoft .N
 In addition it will install python, ffmpeg and ca-certificates.
 
 # Dependencies
-- [FFMPEG](https://git.ffmpeg.org/ffmpeg.git) is installed into the image during docker build process.
+- [FFMPEG](https://ffmpeg.org/) is installed into the image during docker build process.
 - [Youtube-DL](https://youtube-dl.org/) binary is included in the image. 
 
 # Known Issues
