@@ -8,7 +8,7 @@ To run this project, you will need:
 
 ## Azure Speech Services
 If you do not have an Azure subscription yet, you can get a [30-day free API key](https://azure.microsoft.com/en-us/try/cognitive-services/?api=speech-services).
-Once you have signed up, you have to take note of two things: the **api key** and the **region** that the service is deployed in.
+Select **Speech services** and click on **Get API Key**. Once you have signed up, you have to take note of two things: the **api key** and the **region** that the service is deployed in.
 
 ![Image of Cognitive Service sign-up screen](/images/azure.png)
 
